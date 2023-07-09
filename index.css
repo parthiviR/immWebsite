@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+:root {
+    font-family: 'Poppins Regular';
+}
+
+/* General classes */
+.image-in-box {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    position: relative;
+}
+
+/* Hero section styling */
+.primary-header {
+    display: none;
+}
+
+.hero-main-container {
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+}
+
+.hero-image-container {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    z-index: -1;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    background-color: rgb(45, 43, 43);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+}
+
+.hero-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em 0em 1em;
+}
+
+.algonquin-logo-container img {
+    width: 55%;
+    height: auto;
+
+}
+
+.imm-logo {
+    display: none;
+}
+
+.hero-text {
+    height: auto;
+    font-family: 'Poppins SemiBold';
+    font-size: 1.8em;
+    color: white;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    padding-left: 1em;
+    width: 45%;
+}
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+@keyframes movNav{
+    0% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+  }
+.hamburger-menu-items-mobile {
+    padding: 1em;
+    display: none;
+    background-color: #00703C;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    font-family: 'Poppins Medium';
+    font-size: 1.3em;
+    line-height: 2em;
+    position: absolute;
+    z-index: 998;
+    animation: movNav 1s ease;
+}
+  
+.hamburger-menu-items-mobile a {
+    text-decoration: none;
+   color: white;
+   margin-bottom: 2em;
+}
+.hamburger-menu-items-mobile li {
+   margin-bottom: 1em;
+   font-size: 1.5em;
+}
+.hamburger-menu-items-mobile ul{    
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+.vertical-nav {
+    display: none;
+}
+
+.hamburger-cancel {
+    display: none;
+    z-index: 999;
+}
+
+.applyNow {
+    padding: .5em 1em;
+    border: solid 2px #00703C;
+    border-radius: 10px;
+}
+
+.parentFooter {
+    position: relative;
+}
+
+.footerImg {
+    position: relative;
+}
+
+.footerContents {
+    display: flex;
+    position: absolute;
+    margin-left: 15em;
+    top: 11em;
+}
+
+.footerContents ul {
+    /* background-color: yellowgreen; */
+    margin-left: 1em;
+}
+
+.footerContents li {
+    font-size: .6em;
+    color: white;
+    line-height: 1.5em;
+    font-weight: lighter;
+}
+
+.testimonial-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EEEEEE;
+    padding: 2em;
+} 
+.profile-image-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #00703C;
+}
+.testimonial-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* for the screen size 480px and larger*/
+@media screen and (min-width: 30em) {}
+
+@media screen and (min-width: 580px) {}
+
+/* for the screen size 768px and larger */
+@media screen and (min-width: 48em) {
+    .hero-header-section {
+        padding: 0em 4em;
+    }
+
+    .hero-header-section {
+
+        padding: 2em 2em;
+    }
+
+    .hero-main-container {
+        height: 100vh;
+    }
+
+    .vertical-nav {
+        display: block;
+        padding-left: 8.3em;
+
+    }
+
+    .vertical-nav li {
+        font-family: 'Poppins Regular';
+        color: rgb(255, 255, 255);
+        font-size: 2.1em;
+        padding-top: 0.4em;
+
+    }
+
+    .vertical-nav li:hover {
+        cursor: pointer;
+        color: #7AC143;
+    }
+
+    .algonquin-logo-container {
+        width: 30em;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hero-text {
+        font-size: 4em;
+        line-height: 1.5em;
+        padding-left: 2em;
+        width: 45%;
+        margin-top: 1.5em;
+    }
+
+    .imm-logo {
+        display: contents;
+    }
+
+    .primary-header {
+        display: flex;
+        flex-direction: row;
+        padding: 0 4em;
+        justify-content: space-between;
+    }
+
+    .header-logo-container {
+        height: 64px;
+        width: 67px;
+        margin-right: calc(67px + 15vw);
+    }
+
+    .primary-nav {
+        flex: 1;
+        display: flex;
+    }
+
+    .primary-nav-items {
+        flex: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .primary-nav-items li:hover {
+        color: #7AC143;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .footerImg {
+        position: relative;
+    }
+
+    .footerContents {
+        margin-left: 70em;
+        top: 48em;
+    }
+
+    .footerContents ul {
+        /* background-color: yellowgreen; */
+        margin-left: 5em;
+    }
+
+    .footerContents li {
+        font-size: 2em;
+        color: white;
+        line-height: 1.7em;
+        font-weight: lighter;
+    }
+    .testimonial-container {
+        flex-direction: row;
+        border-radius: 200px;
+        padding: 0 2em 0 0;
+    } 
+    .profile-image-container img {
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        background-color: #00703C;
+    }
+    .testimonial-text-container {
+        align-items: flex-start;
+        padding-left: 2em;
+    }
+}
+
+/* for the screen size 960px and larger*/
+@media screen and (min-width: 60em) {}
