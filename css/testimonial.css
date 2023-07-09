@@ -1,0 +1,117 @@
+/* TESTIMONIALS PAGE */
+
+
+.testimonial-head h1
+{
+    color: #00703C;
+    font-family: 'Poppins SemiBold';
+    padding: 0%;
+}
+.testimonial-head p
+{
+    padding-top: 0%;
+    padding-bottom: 25px;
+}
+
+.testimonial-box-one , .testimonial-box-two , .testimonial-box-three, .testimonial-box-four, .testimonial-box-five , .six
+
+{
+    color: #00703C;
+    background-color: #d7ecc7;
+    border: 0;
+    margin-bottom: 10px;
+    padding: 25px;
+    text-align: left;
+    align-content: center;
+}
+
+.testimonial
+{
+    gap: 50px;
+}
+
+@media only screen and (min-width: 900px)
+{
+
+    .testimonial
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        padding: 0;
+    }
+        
+    .testimonial-box-one
+    {
+            grid-column: 1;
+            grid-row: 1/4;
+            color: #00703C;
+            background-color: #d7ecc7;
+            padding: 20px;
+            border: 0;
+            text-align: left;
+            align-content: center;
+
+    }
+    .testimonial-box-two
+    {
+            grid-column: 2/2;
+            grid-row: 1;
+            color: #00703C;
+            background-color: #d7ecc7;
+            padding: 20px;
+            border: 0;
+            text-align: left;
+            align-content: center;
+
+    }
+    .testimonial-box-three
+    {
+            grid-column: 3;
+            grid-row: 1/4;
+            color: #00703C;
+            background-color: #d7ecc7;
+            padding: 20px;
+            border: 0;
+            text-align: left;
+            align-content: center;
+
+    }
+
+    .testimonial-box-four
+    {
+       padding: 20px;
+       background-color: #d7ecc7;
+       color: #00703C;
+       border: 0;
+       text-align: left;
+       align-content: center;
+
+    }
+    .testimonial-box-six
+    {
+        grid-column: 1/3;
+        grid-row: 4;
+        color: #00703C;
+        background-color: #d7ecc7;
+        padding: 20px;
+        border: 0;
+        text-align: left;
+        align-content: center;
+
+    }
+
+    .testimonial-box-five
+    {
+        grid-column: 2;
+        grid-row: 2/4;
+        padding: 20px;
+        color: #00703C;
+        background-color: #d7ecc7;
+        border: 0;
+        text-align: left;
+        align-content: center;
+    }
+
+
+}

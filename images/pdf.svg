@@ -1,0 +1,33 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g id="_x32_2_x2C__File_x2C__format_x2C__pdf_x2C__document_x2C__light">
+	<g>
+		<g>
+			<g>
+				<polygon style="fill:#ECE6F2;" points="496,106 391,106 391,16 				" id="id_101"></polygon>
+				<path style="fill: rgb(122, 193, 67);" d="M16,226v210c15.265,0,386.505,0,405,0V226C403.616,226,31.113,226,16,226z" id="id_102"></path>
+				<polygon style="fill:#FFF5F5;" points="496,106 496,496 166,496 166,436 421,436 421,226 166,226 166,16 391,16 391,106 				" id="id_103"></polygon>
+			</g>
+		</g>
+		<g>
+			<g>
+				<polygon id="XMLID_651_" points="511,511 151,511 151,436 181,436 181,481 481,481 481,112.899 385.451,31 181,31 181,226 
+					151,226 151,1 396.549,1 511,99.101 				"></polygon>
+				<polygon id="XMLID_649_" points="496,121 376,121 376,16 406,16 406,91 496,91 				"></polygon>
+				<path id="XMLID_642_" d="M121,361H61v-90h60c24.813,0,45,20.187,45,45S145.813,361,121,361z M91,331h30c8.271,0,15-6.729,15-15
+					s-6.729-15-15-15H91V331z"></path>
+				<rect id="XMLID_638_" x="61" y="346" width="30" height="60"></rect>
+				<path id="XMLID_631_" d="M232.667,406H196V271h36.667C262.075,271,286,294.925,286,324.333v28.334
+					C286,382.075,262.075,406,232.667,406z M226,376h6.667C245.533,376,256,365.533,256,352.667v-28.334
+					C256,311.467,245.533,301,232.667,301H226V376z"></path>
+				<polygon id="XMLID_627_" points="346,406 316,406 316,271 376,271 376,301 346,301 				"></polygon>
+				<rect id="XMLID_623_" x="331" y="331" width="45" height="30"></rect>
+				<path id="XMLID_615_" d="M436,451H1V211h435V451z M31,421h375V241H31V421z"></path>
+				<rect id="XMLID_613_" x="211" y="151" width="135" height="30"></rect>
+				<rect id="XMLID_611_" x="211" y="91" width="135" height="30"></rect>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>
