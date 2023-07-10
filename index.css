@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 @font-face {
     font-family: 'Poppins Regular';
     src: url('./fonts/Poppins-Regular.ttf') format('truetype');
@@ -13,10 +15,6 @@
     src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
 }
 
-:root {
-    font-family: 'Poppins Regular';
-}
-
 /* General classes */
 .image-in-box {
     height: 100%;
@@ -26,6 +24,137 @@
 
 .wrapper {
     position: relative;
+}
+
+:root {
+    font-family: 'Poppins Regular';
+    --green: #00703C;
+    --neon: #7AC143;
+    --border: #EEEEEE;
+}
+
+main {
+    margin: 2.5rem;
+}
+
+footer {
+    position: relative;
+    height: 15vh;
+    width: 100vw;
+}
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+@keyframes movNav {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.hamburger-menu-items-mobile {
+    padding: 1em;
+    display: none;
+    background-color: #00703C;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    font-family: 'Poppins Medium';
+    font-size: 1.3em;
+    line-height: 2em;
+    position: absolute;
+    z-index: 998;
+    animation: movNav 1s ease;
+}
+
+.hamburger-menu-items-mobile a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.hamburger-menu-items-mobile li {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.hamburger-menu-items-mobile ul {
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+.program {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+
+.highlights-box {
+    border: 2px solid #7AC143;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 1em;
+    /* height: fit-content; */
+    font-family: 'Poppins Regular';
+}
+
+.highlights-box h3 {
+    margin-bottom: .5em;
+    color: #00703C;
+    font-family: 'Poppins Medium';
+    font-size: 2em;
+}
+
+.highlights-box p {
+    margin-bottom: .5em;
+    font-family: 'Poppins Regular';
+    line-height: 1.5em;
+}
+
+.highlights-item-box {
+    border: 2px solid #dedede;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 1em;
+    height: fit-content;
+}
+
+.highlights-item-box h4 {
+    color: #7AC143;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+
+.highlights-item-box p {
+    line-height: 1.5em;
+}
+
+.icon {
+    max-width: 4em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    max-width: 2.5em;
+    float: right;
+    margin-top: 1.5em;
+}
+
+.bgimg {
+    position: relative;
+    margin: 0;
+    width: 10rem;
 }
 
 /* Hero section styling */
@@ -87,7 +216,7 @@
     font-size: 1.8em;
     color: white;
     line-height: 1.5em;
-    margin-top: 1.5em;
+    margin-top: 2.5em;
     padding-left: 1em;
     width: 45%;
 }
@@ -98,41 +227,21 @@
     font-size: 2rem;
 }
 
-@keyframes movNav{
-    0% {
-      transform: translateX(500px);
-    }
-    100% {
-      transform: translateX(100px);
-    }
-  }
 .hamburger-menu-items-mobile {
-    padding: 1em;
     display: none;
-    background-color: #00703C;
+    background-color: black;
     height: 100vh;
     width: 100vw;
-    top:0;
+    top: 0;
     font-family: 'Poppins Medium';
     font-size: 1.3em;
     line-height: 2em;
     position: absolute;
     z-index: 998;
-    animation: movNav 1s ease;
 }
-  
-.hamburger-menu-items-mobile a {
+
+.hamburger-menu-items a {
     text-decoration: none;
-   color: white;
-   margin-bottom: 2em;
-}
-.hamburger-menu-items-mobile li {
-   margin-bottom: 1em;
-   font-size: 1.5em;
-}
-.hamburger-menu-items-mobile ul{    
-    margin-top: 30%;
-    margin-left: 25%;
 }
 
 .vertical-nav {
@@ -155,14 +264,20 @@
 }
 
 .footerImg {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
 }
 
 .footerContents {
-    display: flex;
     position: absolute;
-    margin-left: 15em;
-    top: 11em;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3em;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
 }
 
 .footerContents ul {
@@ -185,26 +300,90 @@
     justify-content: center;
     background-color: #EEEEEE;
     padding: 2em;
-} 
+    border-radius: 20px;
+}
+
 .profile-image-container img {
     height: 200px;
     width: 200px;
     border-radius: 100%;
     background-color: #00703C;
 }
+
 .testimonial-text-container {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 1em;
+    line-height: 1.5em;
 }
 
-/* for the screen size 480px and larger*/
-@media screen and (min-width: 30em) {}
+/* What will you study? */
 
-@media screen and (min-width: 580px) {}
+.study {
+    display: flex;
+    flex-direction: column;
+}
 
-/* for the screen size 768px and larger */
-@media screen and (min-width: 48em) {
+.study h1 {
+    color: #00703C;
+    font-family: 'Poppins SemiBold', sans-serif;
+    font-size: 2rem;
+    margin-top: 1em;
+}
+
+.data {
+    margin-top: 1em;
+    font-family: 'Poppins Regular', sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.study-illustrations {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 760px) and (max-width: 1030px) {
+    
+    .footerContents li {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 65em) {
+    html {
+        margin: 20px;
+
+    }
+
+    main {
+        margin: 5rem;
+    }
+
+    .program {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 80px;
+    }
+
+    .highlights-box {
+        grid-column: 1 / 3;
+        font-size: 32px;
+    }
+
+    /* what  will you study landing page */
+    .placeholder {
+        height: 200px;
+        width: 200px;
+        margin-right: 3.1em;
+        margin-top: 2em;
+    }
+
+    /* testimonial landing page */
+
     .hero-header-section {
         padding: 0em 4em;
     }
@@ -220,7 +399,7 @@
 
     .vertical-nav {
         display: block;
-        padding-left: 8.3em;
+        padding-left: 12em;
 
     }
 
@@ -248,7 +427,7 @@
     .hero-text {
         font-size: 4em;
         line-height: 1.5em;
-        padding-left: 2em;
+        padding-left: 3em;
         width: 45%;
         margin-top: 1.5em;
     }
@@ -289,14 +468,17 @@
         cursor: pointer;
         text-decoration: underline;
     }
+    /* should be different according to the container above, set it manually */
+    footer {
+        height: 29vh;
+    }
 
     .footerImg {
-        position: relative;
+        position: absolute;
     }
 
     .footerContents {
-        margin-left: 70em;
-        top: 48em;
+        z-index: 1;
     }
 
     .footerContents ul {
@@ -306,26 +488,33 @@
 
     .footerContents li {
         font-size: 2em;
-        color: white;
         line-height: 1.7em;
         font-weight: lighter;
     }
+
     .testimonial-container {
         flex-direction: row;
         border-radius: 200px;
         padding: 0 2em 0 0;
-    } 
+    }
+
     .profile-image-container img {
         height: 200px;
         width: 200px;
         border-radius: 100%;
         background-color: #00703C;
     }
+
     .testimonial-text-container {
         align-items: flex-start;
         padding-left: 2em;
     }
-}
 
-/* for the screen size 960px and larger*/
-@media screen and (min-width: 60em) {}
+    .highlights-box h3 {
+        font-size: 35px;
+    }
+
+    .highlights-box p {
+        font-size: 25px;
+    }
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Media Management</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/icons/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static '/img/icons/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static '/img/icons/favicon-16x16.png' %}">
@@ -62,7 +62,7 @@
                     <li>Portfolio</li>
                     <li>Testimonials</li>
                     <li>Faculty</li>
-                    <li>Apply</li>
+                    <li>Apply now</li>
                 </ul>
             </div>
         </div>
@@ -89,42 +89,127 @@
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Faculty</a></li>
-                <li><a href="#">Apply</a></li>
+                <li><a href="#">Apply now</a></li>
             </ul>
         </div>
     </div>
     <main>
+        <div class="program">
+            <div class="highlights-box">
+                <h3>
+                    PROGRAM HIGHLIGHTS
+                </h3>
+                <p>
+                    The Interactive Media Management program at
+                    Algonquin College is well suited for anyone who has the
+                    enthusiasm to always evolve.
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <img src="./images/enhance.svg" class="icon image-in-box" alt="logo">
+                <h4>
+                    Start or Enhance
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                    <img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align: right>
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <!-- <img src="./images/timeline.svg" alt=""> -->
+                <img src="./images/timeline.svg" class="icon image-in-box" width="50" height="50">
+                <h4>
+                    Manage Projects
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                    <img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align: right>
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <img src="./images/industry.svg" class="icon image-in-box" alt="">
+                <h4>
+                    Industry Standard Practices
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                    <img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align:right>
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <img src="./images/pdf.svg" class="icon image-in-box" width="50" height="50">
+                <h4>
+                    Download the program overview PDF
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- What will you be studying -->
+
+        <section class="study">
+            <div>
+                <h1>
+                    WHAT YOU'LL BE STUDYING?
+                </h1>
+            </div>
+            <p class="data">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, alias ea. Ipsa eligendi dolorum error
+                libero at voluptas tempora! Ducimus magnam vero perspiciatis nostrum reiciendis id repellendus,
+                excepturi expedita quaerat! Enim atque molestias, aliquid ab rerum sunt ullam dolores, cupiditate cumque
+                error adipisci fugit itaque quam. Magnam quod facere commodi!
+            </p>
+            <div class="study-illustrations">
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+            </div>
+        </section>
         <div class="testimonial-container">
             <div class="profile-image-container">
                 <img class="image-in-box" src="./images/profile_image.jpg">
             </div>
             <div class="testimonial-text-container">
-                <h1 style="color:#00703C; font-family:Poppins SemiBold;">Sophia Davis</h1>
+                <h2 style="color:#00703C; font-family:Poppins SemiBold; font-size: 2em; margin-bottom: .5em;">Sophia
+                    Davis</h2>
                 <i style="color:#7AC143; font-family: Poppins Regular;">~Interactive Media Developer, XYZ Inc</i>
-                <p style="color:#21271F; font-family: Poppins Regular;">The Interactive Multimedia course is an excellent program, the professors are always there for us
-                    providing ever so needed advice or help. The course material is very robust and keeps up with the ever
-                    changing technological times. I'm really glad I chose this program.</p>
+                <p style="color:#21271F; font-family: Poppins Regular;">The Interactive Multimedia course is an
+                    excellent program, the professors are always there for us
+                    providing ever so needed advice or help. The course material is very robust and keeps up with the
+                    everchanging technological times. I'm really glad I chose this program.</p>
             </div>
         </div>
-</main>
+    </main>
+
     <footer>
-        <!-- <div class="parentFooter">
-            <img class="footerImg image-in-box" src="./images/footerImage.svg">
-            <div class="footerContents">
-                <ul>
-                    <li>Home</li>
-                    <li>Faculty</li>
-                    <li>Portfolio</li>
-                </ul>
-                <ul>
-                    <li>Testimonials</li>
-                    <li>Apply Now</li>
-                </ul>
-            </div>
-        </div> -->
+        <img class="footerImg" src="./images/footer.svg">
+        <div class="footerContents">
+            <ul>
+                <li>Home</li>
+                <li>Faculty</li>
+                <li>Portfolio</li>
+            </ul>
+            <ul>
+                <li>Testimonials</li>
+                <li>Apply Now</li>
+            </ul>
+        </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 
 </body>
-
-</html> 
+</html>
