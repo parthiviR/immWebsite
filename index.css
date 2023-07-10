@@ -216,7 +216,7 @@ footer {
     font-size: 1.8em;
     color: white;
     line-height: 1.5em;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     padding-left: 1em;
     width: 45%;
 }
@@ -429,7 +429,7 @@ footer {
         line-height: 1.5em;
         padding-left: 3em;
         width: 45%;
-        margin-top: 1.5em;
+        margin-top: .5em;
     }
 
     .imm-logo {
