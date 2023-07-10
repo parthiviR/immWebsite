@@ -1,216 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-      </style>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <title>Home</title>
+    <title>Interactive Media Management</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/icons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/img/icons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/img/icons/favicon-16x16.png' %}">
+    <link rel="icon" sizes="192x192" href="{% static '/img/icons/favicon.ico' %}" />
+    <!-- <link rel="manifest" href="{% static '/img/icons/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static '/img/icons/safari-pinned-tab.svg' %}" color="#5bbad5"> -->
+    <!-- <meta name="msapplication-TileColor" content="#DA532C"> -->
+    <!-- third party libraries -->
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/acbac8cde3.js" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="wrapper">
-            <div id="hero-main-container" class="hero-main-container">
-                <div class="hero-image-container">
-                    <div class="slideshow-container">
-                        <div class="slide">
-                            <img class="image-in-box" src="imgs/heroImage.jpg" alt="Image 1">
-                        </div>
-                        <div class="slide">
-                            <img class="image-in-box" src="imgs/heroImage2.jpg" alt="Image 2">
-                        </div>
-                        <div class="slide">
-                            <img class="image-in-box" src="imgs/heroImage3.jpg" alt="Image 3">
-                        </div>
+    <div class="wrapper">
+        <div id="hero-main-container" class="hero-main-container">
+            <div class="hero-image-container">
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img class="image-in-box" src="./images/heroImage.jpg" alt="Image 1">
                     </div>
-                </div>
-                <div class="hero-header-section">
-                    <div class="algonquin-logo-container">
-                        <img src="imgs/AlcongquinCollegeLogo.svg">
+                    <div class="slide">
+                        <img class="image-in-box" src="./images/heroImage2.jpg" alt="Image 2">
                     </div>
-                    <div class="hamburger-menu">
-                        <div class="hamburger hamburger-icon" id="hamburger-icon">
-                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                        </div>
+                    <div class="slide">
+                        <img class="image-in-box" src="./images/heroImage3.jpg" alt="Image 3">
                     </div>
-                    <div class="imm-logo">
-                        <img src="./imgs/SchoolofMediaAndDesign.svg">
-                    </div>
-    
-                </div>
-                <div class="hero-text">
-                    <p>INTERACTIVE</p>
-                    <p>MEDIA</p>
-                    <p>MANAGEMENT</p>
-                </div>
-                <div class="vertical-nav">
-                    <ul>
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>Testimonials</li>
-                        <li>Faculty</li>
-                        <li>Apply</li>
-                    </ul>
                 </div>
             </div>
-            <header id="primary-header" class="primary-header">
-                <div class="header-logo-container">
-                    <img class="image-in-box" src="./imgs/ACBranding.svg">
+            <div class="hero-header-section">
+                <div class="algonquin-logo-container">
+                    <img src="./images/AlcongquinCollegeLogo.svg">
                 </div>
-                <nav class="primary-nav">
-                    <ul class="primary-nav-items">
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>Testimonials</li>
-                        <li>Faculty</li>
-                        <li class="applyNow">Apply now</li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="hamburger-menu-items-mobile" id="hamburger-menu-items-mobile">
-                <div class="hamburger hamburger-cancel" id="hamburger-cancel">
-                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                <div class="hamburger-menu">
+                    <div class="hamburger hamburger-icon" id="hamburger-icon">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </div>
                 </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Faculty</a></li>
-                    <li><a href="#">Apply</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    
-    <main>
-            <div class="program">
-
-                <div class="highlights">
-                    <h3 class="h3">
-                        PROGRAM HIGHLIGHTS
-                    </h3>
-                    <p>
-                        The Interactive Media Management program at 
-                        Algonquin College is well suited for anyone who has the 
-                        enthusiasm to always evolve.
-                    </p>
-                </div>
-
-                <div class="enhance">
-                    <img src="imgs/enhance.svg" class="icon" alt="logo">
-                    <h4 class="h4">
-                        Start or Enhance
-                    </h4 class="h4">
-                    <p>
-                        Conduct and evaluate a thorough 
-                        assessment of the requirements of a complex interactive media project.
-                        <img class="arrow" src="imgs/arrow.svg" width="50" height="50" text-align: right></object>
-                    </p>
-                </div>
-
-                <div class="project">
-                    <!-- <img src="imgs/timeline.svg" alt=""> -->
-                    <object data="imgs/timeline.svg" class="icon" width="50" height="50"></object    >
-                    <h4 class="h4">
-                        Manage Projects
-                    </h4>
-                    <p>
-                        Conduct and evaluate a thorough 
-                        assessment of the requirements of a complex interactive media project.
-                        <img class="arrow" src="imgs/arrow.svg" width="50" height="50" text-align: right></object>
-                    </p>
-                </div>
-
-                <div class="industry">
-                    <img src="imgs/industry.svg" class="icon" alt="">
-                    <h4 class="h4">
-                        Industry Standard Practices
-                    </h4>
-                    <p>
-                        Conduct and evaluate a thorough 
-                        assessment of the requirements of a complex interactive media project. <br>
-                        <img class="arrow" src="imgs/arrow.svg" width="50" height="50" text-align: right></object>
-                    </p>
-                </div>
-
-                <div class="pdf">
-                    <object data="imgs/pdf.svg" class="icon" width="50" height="50"></object>
-                    <h4 class="h4">
-                        Download the program overview PDF
-                    </h4>
-                    <p>
-                        Conduct and evaluate a thorough 
-                        assessment of the requirements of a complex interactive media project.
-                    </p>
+                <div class="imm-logo">
+                    <img src="./images/SchoolofMediaAndDesign.svg">
                 </div>
 
             </div>
-
-            <!-- What will you be studying -->
-
-            <section class="study">
-                <div>
-                    <h1>
-                        WHAT YOU'LL BE STUDYING?
-                    </h1>
-                </div>
-                <div class="data">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, alias ea. Ipsa eligendi dolorum error libero at voluptas tempora! Ducimus magnam vero perspiciatis nostrum reiciendis id repellendus, excepturi expedita quaerat! Enim atque molestias, aliquid ab rerum sunt ullam dolores, cupiditate cumque error adipisci fugit itaque quam. Magnam quod facere commodi!
-                </div>
-                <div class="pdf1">
-                    <object data="imgs/pdf.svg" class="icon" width="50" height="50"></object>
-                    <p>Download the program overview PDF</p>
-                    <a href="#">Download PDF</a>
-                </div>
-                <div class="illustraor">
-                    <img src="404image" class="placeholder" />
-                    <img src="404image" class="placeholder" />
-                    <img src="404image" class="placeholder" />
-                    <img src="404image" class="placeholder" />
-                    <img src="404image" class="placeholder" />
-                    <img src="404image" class="placeholder" />
-                </div>
-            </section>
-
-            
-            <div class="testimonial-container">
-                <div class="profile-image-container">
-                    <img class="image-in-box" src="imgs/profile_image.jpg">
-                </div>
-                <div class="testimonial-text-container">
-                    <h1 style="color:#00703C; font-family:Poppins SemiBold;">Sophia Davis</h1>
-                    <i style="color:#7AC143; font-family: Poppins Regular;">~Interactive Media Developer, XYZ Inc</i>
-                    <p style="color:#21271F; font-family: Poppins Regular;">The Interactive Multimedia course is an excellent program, the professors are always there for us
-                        providing ever so needed advice or help. The course material is very robust and keeps up with the ever
-                        changing technological times. I'm really glad I chose this program.</p>
-                </div>
+            <div class="hero-text">
+                <p>INTERACTIVE</p>
+                <p>MEDIA</p>
+                <p>MANAGEMENT</p>
             </div>
-        
-    </main>
-
-
-    <footer>
-        <div class="parentFooter">
-            <img class="footerImg image-in-box" src="imgs/footerImage.svg">
-            <div class="footerContents">
+            <div class="vertical-nav">
                 <ul>
                     <li>Home</li>
-                    <li>Faculty</li>
                     <li>Portfolio</li>
-                </ul>
-                <ul>
                     <li>Testimonials</li>
-                    <li>Apply Now</li>
+                    <li>Faculty</li>
+                    <li>Apply now</li>
                 </ul>
             </div>
         </div>
+        <header id="primary-header" class="primary-header">
+            <div class="header-logo-container">
+                <img class="image-in-box" src="./images/ACBranding.svg">
+            </div>
+            <nav class="primary-nav">
+                <ul class="primary-nav-items">
+                    <li>Home</li>
+                    <li>Portfolio</li>
+                    <li>Testimonials</li>
+                    <li>Faculty</li>
+                    <li class="applyNow">Apply now</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hamburger-menu-items-mobile" id="hamburger-menu-items-mobile">
+            <div class="hamburger hamburger-cancel" id="hamburger-cancel">
+                <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Apply now</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="program">
+            <div class="highlights-box">
+                <h3>
+                    PROGRAM HIGHLIGHTS
+                </h3>
+                <p>
+                    The Interactive Media Management program at
+                    Algonquin College is well suited for anyone who has the
+                    enthusiasm to always evolve.
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <img src="./images/enhance.svg" class="icon image-in-box" alt="logo">
+                <h4>
+                    Start or Enhance
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                    <img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align: right>
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <!-- <img src="./images/timeline.svg" alt=""> -->
+                <img src="./images/timeline.svg" class="icon image-in-box" width="50" height="50">
+                <h4>
+                    Manage Projects
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                    <img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align: right>
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <img src="./images/industry.svg" class="icon image-in-box" alt="">
+                <h4>
+                    Industry Standard Practices
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                    <img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align:right>
+                </p>
+            </div>
+
+            <div class="highlights-item-box">
+                <img src="./images/pdf.svg" class="icon image-in-box" width="50" height="50">
+                <h4>
+                    Download the program overview PDF
+                </h4>
+                <p>
+                    Conduct and evaluate a thorough
+                    assessment of the requirements of a complex interactive media project.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- What will you be studying -->
+
+        <section class="study">
+            <div>
+                <h1>
+                    WHAT YOU'LL BE STUDYING?
+                </h1>
+            </div>
+            <p class="data">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, alias ea. Ipsa eligendi dolorum error
+                libero at voluptas tempora! Ducimus magnam vero perspiciatis nostrum reiciendis id repellendus,
+                excepturi expedita quaerat! Enim atque molestias, aliquid ab rerum sunt ullam dolores, cupiditate cumque
+                error adipisci fugit itaque quam. Magnam quod facere commodi!
+            </p>
+            <div class="study-illustrations">
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+                <img src="404image" class="placeholder image-in-box" />
+            </div>
+        </section>
+        <div class="testimonial-container">
+            <div class="profile-image-container">
+                <img class="image-in-box" src="./images/profile_image.jpg">
+            </div>
+            <div class="testimonial-text-container">
+                <h2 style="color:#00703C; font-family:Poppins SemiBold; font-size: 2em; margin-bottom: .5em;">Sophia
+                    Davis</h2>
+                <i style="color:#7AC143; font-family: Poppins Regular;">~Interactive Media Developer, XYZ Inc</i>
+                <p style="color:#21271F; font-family: Poppins Regular;">The Interactive Multimedia course is an
+                    excellent program, the professors are always there for us
+                    providing ever so needed advice or help. The course material is very robust and keeps up with the
+                    everchanging technological times. I'm really glad I chose this program.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img class="footerImg" src="./images/footer.svg">
+        <div class="footerContents">
+            <ul>
+                <li>Home</li>
+                <li>Faculty</li>
+                <li>Portfolio</li>
+            </ul>
+            <ul>
+                <li>Testimonials</li>
+                <li>Apply Now</li>
+            </ul>
+        </div>
     </footer>
-    <script src="index.js"></script>
-    
+    <script src="./js/index.js"></script>
+
 </body>
 </html>
