@@ -165,7 +165,7 @@ footer {
 .hero-main-container {
     position: relative;
     width: 100vw;
-    height: 40vh;
+    height:40vh;
 }
 
 .hero-image-container {
@@ -394,7 +394,7 @@ footer {
     }
 
     .hero-main-container {
-        height: 100vh;
+        height: 90vh;
     }
 
     .vertical-nav {
