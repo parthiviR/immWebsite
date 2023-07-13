@@ -163,6 +163,8 @@ footer {
 }
 
 .hero-main-container {
+    display:flex;
+    flex-direction: column;
     position: relative;
     width: 100vw;
     height: 40vh;
