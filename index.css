@@ -354,7 +354,13 @@ footer {
     font-size: 2rem;
     margin-top: 1em;
 }
-
+.testimonial-heading{
+    color: #00703C;
+    font-family: 'Poppins SemiBold', sans-serif;
+    font-size: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 .data {
     margin-top: 1em;
     font-family: 'Poppins Regular', sans-serif;
