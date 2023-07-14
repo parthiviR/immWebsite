@@ -60,6 +60,9 @@ footer {
 .placeholder {   
     height: 200px;
     width: 200px;
+    border: 2px solid black;
+    padding: 1em;
+    border-radius: 20px;
 }
 .hamburger-menu-items-mobile {
     padding: 1em;
@@ -410,6 +413,9 @@ footer {
     .placeholder {   
         height: 150px;
         width: 150px;
+        border: 2px solid black;
+        padding: 1em;
+        border-radius: 20px;
     }
 
     /* testimonial landing page */
@@ -566,6 +572,7 @@ footer {
     }
     .study-illustrations {
         justify-content: flex-start;
+        gap: 4em;
     }
     
 }
