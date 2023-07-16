@@ -50,12 +50,18 @@ footer {
 
 @keyframes movNav {
     0% {
-        transform: translateX(500px);
+        transform:transformX(500px);
+    }
+
+    50% {
+        transform:transformX(250px);
     }
 
     100% {
-        transform: translateX(100px);
+        transform:transformX(100px);
     }
+
+  
 }
 .placeholder {   
     height: 200px;
@@ -76,7 +82,7 @@ footer {
     line-height: 2em;
     position: absolute;
     z-index: 998;
-    animation: movNav 1s ease;
+    animation: movNav 1.2s ease-in-out;
 }
 
 .hamburger-menu-items-mobile a {
@@ -126,7 +132,7 @@ footer {
 .highlights-item-box {
     border: 2px solid #dedede;
     border-radius: 20px;
-    padding: 1em;
+    padding: 2em;
     font-size: 1em;
     height: fit-content;
 }
