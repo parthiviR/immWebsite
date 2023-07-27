@@ -28,8 +28,10 @@ img {
     max-width: 100%;
     height: auto;
     margin: auto;
-    border-radius: 2%;
  
+}
+main img{
+    border-radius: 10px;
 }
 
 .subpage
