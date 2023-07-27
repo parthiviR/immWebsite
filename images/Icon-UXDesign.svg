@@ -1,40 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.6 52.43">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.64 78.9">
   <defs>
     <style>
       .cls-1 {
-        fill: #f9fbf2;
+        fill: #04703c;
       }
 
       .cls-2 {
-        fill: #fdde93;
+        fill: #f0efef;
       }
 
       .cls-3 {
-        fill: #8abf56;
+        fill: #fdde93;
       }
 
       .cls-4 {
+        fill: #8abf56;
+      }
+
+      .cls-5 {
         fill: #c5dc75;
+      }
+
+      .cls-6 {
+        fill: #010101;
+        font-family: Poppins-Medium, Poppins;
+        font-size: 8.58px;
+        font-weight: 500;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
-    <g id="_33_App_Design_Mobile_Tablet_Edit_Tools" data-name="33, App, Design, Mobile, Tablet, Edit Tools">
-      <g>
-        <path class="cls-3" d="m25.03,0H4.57C2.01,0,0,2.1,0,4.57v43.29c0,2.56,2.1,4.57,4.57,4.57h20.46c2.56,0,4.57-2.1,4.57-4.57V4.57c.09-2.56-2.01-4.57-4.57-4.57Z"/>
-        <path class="cls-1" d="m26.21,5.85v40.83c0,1.37-1.1,2.47-2.47,2.47H5.85c-1.37,0-2.47-1.1-2.47-2.47V5.85c0-1.37.91-2.47,2.28-2.47h4.57v.18c0,.82.64,1.46,1.46,1.46h6.12c.82,0,1.46-.64,1.46-1.46v-.18h4.48c1.37,0,2.47,1.1,2.47,2.47Z"/>
-        <path class="cls-3" d="m23.38,27.95v12.06c0,2.19-1.74,3.93-3.93,3.93h-9.32c-2.19,0-3.93-1.74-3.93-3.93v-12.06h17.17Z"/>
-        <rect class="cls-3" x="11.05" y="21.65" width="2.37" height="6.3"/>
-        <rect class="cls-4" x="8.68" y="21.65" width="2.37" height="6.3"/>
-        <polygon class="cls-2" points="11.05 15.98 13.43 21.65 11.05 21.65 8.68 21.65 11.05 15.98"/>
+    <g>
+      <g id="_33_App_Design_Mobile_Tablet_Edit_Tools" data-name="33, App, Design, Mobile, Tablet, Edit Tools">
         <g>
-          <polygon class="cls-3" points="20.55 25.67 20.55 27.95 15.98 27.95 15.98 15.98 20.55 15.98 20.55 18.82 20.55 22.19 20.55 25.67"/>
-          <path class="cls-4" d="m18.27,25.67c0,.27.27.55.55.55h1.74v-1.1h-1.74c-.27,0-.55.18-.55.55Z"/>
-          <path class="cls-4" d="m18.27,22.19c0,.27.27.55.55.55h1.74v-1.1h-1.74c-.27,0-.55.27-.55.55Z"/>
-          <path class="cls-4" d="m18.27,18.82c0,.27.27.55.55.55h1.74v-1.1h-1.74c-.27,0-.55.18-.55.55Z"/>
+          <path class="cls-1" d="m34.24,0H11.54c-2.84,0-5.07,2.33-5.07,5.07v48.05c0,2.84,2.33,5.07,5.07,5.07h22.71c2.84,0,5.07-2.33,5.07-5.07V5.07c.1-2.84-2.23-5.07-5.07-5.07Z"/>
+          <path class="cls-2" d="m35.56,6.49v45.31c0,1.52-1.22,2.74-2.74,2.74H12.96c-1.52,0-2.74-1.22-2.74-2.74V6.49c0-1.52,1.01-2.74,2.53-2.74h5.07v.2c0,.91.71,1.62,1.62,1.62h6.79c.91,0,1.62-.71,1.62-1.62v-.2h4.97c1.52,0,2.74,1.22,2.74,2.74Z"/>
+          <path class="cls-1" d="m32.42,31.02v13.38c0,2.43-1.93,4.36-4.36,4.36h-10.34c-2.43,0-4.36-1.93-4.36-4.36v-13.38h19.06Z"/>
+          <rect class="cls-4" x="18.73" y="24.02" width="2.64" height="6.99"/>
+          <rect class="cls-5" x="16.1" y="24.02" width="2.64" height="6.99"/>
+          <polygon class="cls-3" points="18.73 17.74 21.37 24.02 18.73 24.02 16.1 24.02 18.73 17.74"/>
+          <g>
+            <polygon class="cls-4" points="29.28 28.48 29.28 31.02 24.21 31.02 24.21 17.74 29.28 17.74 29.28 20.88 29.28 24.63 29.28 28.48"/>
+            <path class="cls-5" d="m26.74,28.48c0,.3.3.61.61.61h1.93v-1.22h-1.93c-.3,0-.61.2-.61.61Z"/>
+            <path class="cls-5" d="m26.74,24.63c0,.3.3.61.61.61h1.93v-1.22h-1.93c-.3,0-.61.3-.61.61Z"/>
+            <path class="cls-5" d="m26.74,20.88c0,.3.3.61.61.61h1.93v-1.22h-1.93c-.3,0-.61.2-.61.61Z"/>
+          </g>
         </g>
       </g>
+      <text class="cls-6" transform="translate(0 73.91)"><tspan x="0" y="0">UX DESIGN</tspan></text>
     </g>
   </g>
 </svg>

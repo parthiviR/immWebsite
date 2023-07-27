@@ -59,7 +59,7 @@
 
 .footer-logo {
     width: 300px;
-    margin: 0;
+    margin-top: 2.5vh;
 }
 
 
@@ -107,7 +107,7 @@
 
     .footer-logo {
         width: 30 0px;
-        margin-top: 14.5vh;
+        margin-top: 15.5vh;
     }
 
     .footerContents li {
@@ -152,7 +152,7 @@
 
     .footer-logo {
         width: 300px;
-        margin-top: 14.5vh;
+        margin-top: 15.5vh;
     }
 
     .apply-now-grid {
