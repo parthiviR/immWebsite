@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./../css/reset.css">
+	<link rel="stylesheet" href="./../index.css">
+	<link rel="stylesheet" href="./../css/portfolio.css">
+	<link rel="stylesheet" href="./../css/footer.css">
+	<link rel="stylesheet" href="./../css/header.css">
+	<script src="https://kit.fontawesome.com/acbac8cde3.js" crossorigin="anonymous"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<title>Faculty</title>
 </head>
+
 <body>
-    
-</body>
+		<div style="display: flex; justify-content: flex-end; padding: 0.5em 0.5em 0 0;" class="hamburger-menu">
+			<div class="hamburger hamburger-icon" id="hamburger-icon">
+				<i class="fa-solid fa-bars" style="color: black;"></i>
+			</div>
+		</div>
+        <header id="primary-header" class="primary-header">
+            <div class="header-logo-container">
+                <img class="image-in-box" src="./../images/ACBranding.svg">
+            </div>
+            <nav class="primary-nav">
+                <ul class="primary-nav-items">
+                    <li><a href="./../index.html">Home</a></li>
+                    <li><a href="./../pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./../pages/testimonial.html">Testimonials</a></li>
+                    <li><a href="./../pages/faculty.html">Faculty</a></li>
+                    <li><a class="applyNow" href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply Now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hamburger-menu-items-mobile" id="hamburger-menu-items-mobile">
+            <div class="hamburger hamburger-cancel" id="hamburger-cancel">
+                <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            </div>
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./../pages/portfolio.html">Portfolio</a></li>
+                <li><a href="./../pages/testimonial.html">Testimonials</a></li>
+                <li><a href="./../pages/faculty.html">Faculty</a></li>
+                <li><a href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply now</a></li>
+            </ul>
+        </div>
+    <div class="wrapper-main">
+      <main>
+        <section class="hero">
+          <div class="content">
+            <h1 class="herohead">Portfolio</h1>
+            <h5 class="herosubhead">IMM Student's Work</h5>
+            <p>
+              In the one-year Interactive Media Management Ontario College Graduate Certificate program, you develop the hands-on skills to plan and develop websites, online media and dynamic content. While learning industry standard practices, you gain the solid foundation in interactive media that you need to further your career in today's dynamic job market. <br />
+              <br>
+              <br>
+              Throughout the program, as you apply your skills on solo projects and team-based applications for a wide variety of users and audiences, you may deal with regional, national and international clients. <br />
+            
+            </p>
+          </div>
+          <div class="hero-image">
+            <img src="./../images/visuals (2).png" alt="" />
+          </div>
+          <!-- <p class="full-width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae vel rerum veritatis dignissimos corporis eveniet nemo
+            officia dolore qui mollitia, odio velit blanditiis unde enim eos
+            dolorum expedita quas quae!
+          </p> -->
+        </section>
+        <hr />
+        <section class="web-design">
+          <div class="portfolio-images">
+            <div class="portfolio-imgs">
+                <img src="./../images/webdesign1.jpg" alt="" />
+                <img src="./../images/webdesign2.jpg" alt="" />
+              </div>
+              <div class="portfolio-imgs pad">
+                <img src="./../images/webdesign3.jpg" alt="" />
+                <img src="./../images/webdesign4.jpg" alt="" />
+              </div>
+          </div>
+          <div class="webdesign">
+            <h1 class="category">Web-Design</h1>
+            <p class="web-design-content">
+              Students learn how to use industry standard software packages, used
+              for layout, programming and developing web pages and sites. They
+              also learn HTML and CSS to create structure and organize web-based
+              media, while practicing industry-standard coding techniques. <br>
+              <a href="#" class="subpage">View All</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="visuals">
+          <div class="visual">
+            <h1 class="category">Visuals</h1>
+            <p class="visuals-content">
+              Students learn how to use Adobe Photoshop and Illustrator, the current
+              industry-standard in graphic design and editing software, emphasizing
+              the fundamentals of digital design and layout, along with the creation
+              of graphics for the screen, video and web. <br>
+              <a href="#" class="subpage">View All</a>
+            </p>
+        </div>
+          <div class="portfolio-images">
+            <div class="portfolio-imgs">
+                <img src="./../images/visuals1.jpg" alt="" />
+                <img src="./../images/visuals2.jpg" alt="" />
+              </div>
+              <div class="portfolio-imgs pad">
+                <img src= "./../images/visuals3.jpg" alt="" />
+                <img src="./../images/visuals4.jpg" alt="" />
+              </div>
+          </div>
+        </section>        
+        <section class="visuals-mobile">
+          <div class="portfolio-images">
+            <div class="portfolio-imgs">
+                <img src="./../images/visuals1.jpg" alt="" />
+                <img src="./../images/visuals2.jpg" alt="" />
+              </div>
+              <div class="portfolio-imgs pad">
+                <img src= "./../images/visuals3.jpg" alt="" />
+                <img src="./../images/visuals4.jpg" alt="" />
+              </div>
+          </div>
+          <div class="visual">
+            <h1 class="category">Visuals</h1>
+            <p class="visuals-content">
+              Students learn how to use Adobe Photoshop and Illustrator, the current
+              industry-standard in graphic design and editing software, emphasizing
+              the fundamentals of digital design and layout, along with the creation
+              of graphics for the screen, video and web. <br>
+              <a href="#" class="subpage">View All</a>
+            </p>
+          </div>
+         
+        </section>
+        
+        <section class="photography">
+          <div class="portfolio-images">
+            <div class="portfolio-imgs">
+                <img src="./../images/photography-1.jpg" alt="" />
+                <img src="./../images/photography-2.jpg" alt="" />
+            </div>
+              <div class="portfolio-imgs pad">
+                <img src="./../images/photography-3.jpg" alt="" />
+                <img src="./../images/photography-4.jpg" alt="" />
+              </div>
+          </div>
+          <div class="photographs">
+            <h1 class="category">Photography</h1>
+            <p class="photography-content">
+              Students learn how to use industry standard software packages, used
+              for layout, programming and developing web pages and sites. They
+              also learn HTML and CSS to create structure and organize web-based
+              media, while practicing industry-standard coding techniques. <br>
+              <a href="#" class="subpage">View All</a>
+            </p>
+        </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+		<img class="footerImg image-in-box" src="./../images/footer.svg">
+		<div class="footerContents">
+			<div class="footer-grid-container">
+				<div class="footer-content-grids">
+					<a href="./../index.html">Home</a>
+					<a href="./../pages/portfolio.html">Portfolio</a>
+				</div>
+				<div class="footer-content-grids">
+					<a href="./../pages/faculty.html">Faculty</a>
+					<a href="./../pages/testimonial.html">Testimonials</a>
+				</div>
+				<div class="apply-now-grid">
+					<button
+						onclick="location.href='https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F';"
+						class="footerApplyNow">Apply Now</button>
+				</div>
+			</div>
+			<div class="social-media-icons">
+				<a href="#"><i class="fa-brands fa-pinterest" style="color: white;"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+				<a href="#"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+			</div>
+		</div>
+		<div class="footer-logo">
+			<img style="height: inherit; width: inherit;" src="./../images/footerBranding.svg">
+		</div>
+	</footer>
+	<script src="./../js/index.js"></script>
+  </body>
 </html>

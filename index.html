@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Media Management</title>
-    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/icons/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static '/img/icons/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static '/img/icons/favicon-16x16.png' %}">
@@ -58,28 +60,31 @@
             </div>
             <div class="vertical-nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>Testimonials</li>
-                    <li>Faculty</li>
-                    <li>Apply now</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./pages/testimonial.html">Testimonials</a></li>
+                    <li><a href="./pages/faculty.html">Faculty</a></li>
+                    <li><a href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply Now</a></li>
                 </ul>
             </div>
         </div>
-        <header id="primary-header" class="primary-header">
-            <div class="header-logo-container">
-                <img class="image-in-box" src="./images/ACBranding.svg">
-            </div>
-            <nav class="primary-nav">
-                <ul class="primary-nav-items">
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>Testimonials</li>
-                    <li>Faculty</li>
-                    <li class="applyNow">Apply now</li>
+        <header id="primary-header" >
+            <div class="primary-header">
+
+                <div class="header-logo-container">
+                    <img class="image-in-box" src="./images/ACBranding.svg">
+                </div>
+                <nav class="primary-nav">
+                    <ul class="primary-nav-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="./pages/testimonial.html">Testimonials</a></li>
+                        <li><a href="./pages/faculty.html">Faculty</a></li>
+                    <li><a class="applyNow" href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply Now</a></li>
                 </ul>
             </nav>
         </header>
+    </div>
         <div class="hamburger-menu-items-mobile" id="hamburger-menu-items-mobile">
             <div class="hamburger hamburger-cancel" id="hamburger-cancel">
                 <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
@@ -89,7 +94,7 @@
                 <li><a href="./pages/portfolio.html">Portfolio</a></li>
                 <li><a href="./pages/testimonial.html">Testimonials</a></li>
                 <li><a href="./pages/faculty.html">Faculty</a></li>
-                <li><a href="#">Apply now</a></li>
+                <li><a href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply now</a></li>
             </ul>
         </div>
     </div>
@@ -209,21 +214,35 @@
     </main>
 
     <footer>
-        <img class="footerImg" src="./images/footer.svg">
+        <img class="footerImg image-in-box" src="./images/footer.svg">
         <div class="footerContents">
-            <ul>
-                <li>Home</li>
-                <li>Faculty</li>
-                <li>Portfolio</li>
-            </ul>
-            <ul>
-                <li>Testimonials</li>
-                <li class="footerApplyNow">Apply Now</li>
-            </ul>
+            <div class="footer-grid-container">
+                <div class="footer-content-grids">
+                    <a href="./index.html">Home</a>
+                    <a href="./pages/portfolio.html">Portfolio</a>
+                </div>
+                <div class="footer-content-grids">
+                    <a href="./pages/faculty.html">Faculty</a>
+                    <a href="./pages/testimonial.html">Testimonials</a>
+                </div>
+                <div class="apply-now-grid">
+                    <button
+						onclick="location.href='https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F';"
+						class="footerApplyNow">Apply Now</button>
+				</div>
+                </div>
+            </div>
+            <div class="social-media-icons">
+                <a href="#"><i class="fa-brands fa-pinterest" style="color: white;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img style="height: inherit; width: inherit;" src="./images/footerBranding.svg">
         </div>
     </footer>
     <script src="./js/index.js"></script>
-
 </body>
 
 </html>

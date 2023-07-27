@@ -1,0 +1,260 @@
+.hero-main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+}
+
+.hero-image-container {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    z-index: -1;
+    background-color: rgb(152, 151, 151);
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    background-color: rgb(45, 43, 43);
+    mix-blend-mode: multiply;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+}
+
+.hero-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em 0em 1em;
+}
+
+.algonquin-logo-container img {
+    width: 55%;
+    height: auto;
+
+}
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+.imm-logo {
+    display: none;
+}
+
+.hero-text {
+    height: auto;
+    font-family: 'Poppins SemiBold';
+    font-size: 1.8em;
+    color: white;
+    line-height: 1em;
+    margin-top: 1.5em;
+    padding-left: .5em;
+    width: 45%;
+}
+
+.vertical-nav {
+    display: none;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.vertical-nav a:hover {
+    color: #7AC143;
+}
+
+.primary-header {
+    display: none;
+}
+
+
+.hamburger-menu-items-mobile {
+    padding: 1em;
+    display: none;
+    background-color: #00703C;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    font-family: 'Poppins Medium';
+    font-size: 1.3em;
+    line-height: 2em;
+    position: absolute;
+    z-index: 998;
+    animation: movNav 1.2s ease-in-out;
+}
+
+.hamburger-menu-items-mobile a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.hamburger-menu-items-mobile li {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.hamburger-menu-items-mobile ul {
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+.hamburger-menu-items-mobile {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    font-family: 'Poppins Medium';
+    font-size: 1.3em;
+    line-height: 2em;
+    position: absolute;
+    z-index: 998;
+}
+
+.hamburger-cancel {
+    display: none;
+    z-index: 999;
+}
+
+
+.hamburger-menu-items-mobile {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    font-family: 'Poppins Medium';
+    font-size: 1.3em;
+    line-height: 2em;
+    position: absolute;
+    z-index: 998;
+}
+
+.hamburger-menu-items a {
+    text-decoration: none;
+}
+
+
+@media (min-width: 760px) and (max-width: 1030px) {}
+
+@media only screen and (min-width: 65em) {
+    .hero-main-container {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .hero-header-section {
+        padding: 0em 4em;
+    }
+
+    .hero-header-section {
+
+        padding: 2em 2em;
+    }
+
+    .algonquin-logo-container {
+        width: 30em;
+        margin-left: 2em;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .imm-logo {
+        width: 20em !important;
+        height: auto;
+        display: block;
+        margin-right: 3em;
+
+    }
+
+    .hero-text {
+        font-size: 4em;
+        line-height: 1em;
+        padding-left: 1em;
+        width: 45%;
+        margin-top: 1em !important;
+    }
+
+    .vertical-nav {
+        display: flex;
+        flex: 1;
+        line-height: 2em;
+        align-items: flex-start;
+        padding-left: 4.5em;
+
+    }
+
+    .vertical-nav li {
+        font-family: 'Poppins Regular';
+        color: rgb(255, 255, 255) !important;
+        font-size: 2.1em;
+        padding-top: 0.4em;
+
+
+    }
+
+    .vertical-nav a {
+        text-decoration: none;
+    }
+
+    .vertical-nav li:hover {
+        cursor: pointer;
+        color: #7AC143 !important;
+    }
+
+    .primary-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0em 4em 0em 4em;
+    }
+
+    .header-logo-container {
+        height: 64px;
+        width: 67px;
+        margin-right: calc(67px + 15vw);
+        margin-top: 1em;
+    }
+
+    .primary-nav {
+        flex: 1;
+        display: flex;
+    }
+
+    .primary-nav-items {
+        flex: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        font-family: 'Poppins SemiBold';
+        font-weight: 600;
+    }
+
+  
+
+    .primary-nav-items li:hover {
+        color: #7AC143;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

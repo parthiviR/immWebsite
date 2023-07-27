@@ -26,7 +26,6 @@ function showSlides() {
 }
 
 function openNav() {
-    console.log('fsddd');
     hamburgerCancelEl.style.display = "block";
     hamburgerItemEl.style.display = "block";
 }
