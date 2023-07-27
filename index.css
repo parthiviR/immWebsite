@@ -15,17 +15,6 @@
     src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
 }
 
-/* General classes */
-.image-in-box {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.wrapper {
-    position: relative;
-}
-
 :root {
     font-family: 'Poppins Regular';
     --green: #00703C;
@@ -33,73 +22,57 @@
     --border: #EEEEEE;
 }
 
-.wrapper-main{
- padding: 2em 4em;
-}
-footer {
-    position: relative;
-    height: 15vh;
-    width: 100vw;
+/* General classes */
+.image-in-box {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.hamburger {
-    width: 2rem;
-    height: 2rem;
-    font-size: 2rem;
+button {
+    font-family: 'Poppins Regular';
 }
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper-main {
+    padding: 2em 4em;
+}
+
+footer {
+    display: flex !important;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #00703C;
+    flex-direction: column;
+    padding: 1em;
+    position: relative;
+}
+
 
 @keyframes movNav {
     0% {
-        transform:transformX(500px);
-    }
-
-    50% {
-        transform:transformX(250px);
+        transform: translateX(900px);
     }
 
     100% {
-        transform:transformX(100px);
+        transform: translateX(10px);
     }
 
-  
+
 }
-.placeholder {   
-    height: 200px;
-    width: 200px;
-    border: 2px solid black;
+
+.placeholder {
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(217, 217, 217);
     padding: 1em;
     border-radius: 20px;
 }
-.hamburger-menu-items-mobile {
-    padding: 1em;
-    display: none;
-    background-color: #00703C;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    font-family: 'Poppins Medium';
-    font-size: 1.3em;
-    line-height: 2em;
-    position: absolute;
-    z-index: 998;
-    animation: movNav 1.2s ease-in-out;
-}
 
-.hamburger-menu-items-mobile a {
-    text-decoration: none;
-    color: white;
-    margin-bottom: 2em;
-}
-
-.hamburger-menu-items-mobile li {
-    margin-bottom: 1em;
-    font-size: 1.5em;
-}
-
-.hamburger-menu-items-mobile ul {
-    margin-top: 30%;
-    margin-left: 25%;
-}
 
 .program {
     display: grid;
@@ -168,160 +141,22 @@ footer {
     width: 10rem;
 }
 
-/* Hero section styling */
-.primary-header {
-    display: none;
-}
-
-.hero-main-container {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100vw;
-    height:40vh;
-}
-
-.hero-image-container {
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    top: 0;
-    z-index: -1;
-}
-
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    height: inherit;
-    overflow: hidden;
-    background-color: rgb(45, 43, 43);
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: lighten;
-}
-
-.hero-header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 1em 0em 1em;
-}
-
-.algonquin-logo-container img {
-    width: 55%;
-    height: auto;
-
-}
-
-.imm-logo {
-    display: none;
-}
-
-.hero-text {
-    height: auto;
-    font-family: 'Poppins SemiBold';
-    font-size: 1.8em;
-    color: white;
-    line-height: 1em;
-    margin-top: 1.5em;
-    padding-left: .5em;
-    width: 45%;
-}
-
-.hamburger {
-    width: 2rem;
-    height: 2rem;
-    font-size: 2rem;
-}
-
-.hamburger-menu-items-mobile {
-    display: none;
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    font-family: 'Poppins Medium';
-    font-size: 1.3em;
-    line-height: 2em;
-    position: absolute;
-    z-index: 998;
-}
-
-.hamburger-menu-items a {
-    text-decoration: none;
-}
-
-.vertical-nav {
-    display: none;
-}
-
-.hamburger-cancel {
-    display: none;
-    z-index: 999;
-}
 
 .applyNow {
     padding: .5em 1em;
     border: solid 2px #00703C;
     border-radius: 10px;
     background-color: #00703C;
-    color: white;
+    color: white !important;
 }
-.applyNow:hover{
+
+.applyNow:hover {
     background-color: white;
     color: #00703C !important;
 }
+
 .parentFooter {
     position: relative;
-}
-
-.footerImg {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    z-index: -1;
-}
-
-.footerContents {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 1em;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-}
-
-.footerContents ul {
-    /* background-color: yellowgreen; */
-    margin-left: 1em;
-}
-
-.footerContents li {
-    font-size: .6em;
-    color: white;
-    font-weight: lighter;
-}
-.footerApplyNow{
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: .3em;
-    text-align: center;
-}
-.footerApplyNow:hover{
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: .3em;
-    text-align: center;
-    background-color: #EEEEEE;
-    color: #00703C;
 }
 
 .testimonial-container {
@@ -363,13 +198,15 @@ footer {
     font-size: 2rem;
     margin-top: 1em;
 }
-.testimonial-heading{
+
+.testimonial-heading {
     color: #00703C;
     font-family: 'Poppins SemiBold', sans-serif;
     font-size: 2rem;
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 .data {
     margin-top: 1em;
     font-family: 'Poppins Regular', sans-serif;
@@ -382,33 +219,29 @@ footer {
 .study-illustrations {
     display: flex;
     flex-wrap: wrap;
-    gap:2em;
+    gap: 2em;
     margin-bottom: 2em;
     justify-content: center;
 }
 
 @media (min-width: 760px) and (max-width: 1030px) {
-    
-    .footerContents li {
-        font-size: 1em;
-        
-    }
-    .footerContents{
-        line-height: 1.5em;
+    footer {
+        background-color: transparent;
+        height: 29vh;
+        position: relative;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 @media only screen and (min-width: 65em) {
-    html {
-        margin: 20px;
-
-    }
 
     .program {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        }
+    }
 
     .highlights-box {
         grid-column: 1 / 3;
@@ -416,88 +249,12 @@ footer {
     }
 
     /* what  will you study landing page */
-    .placeholder {   
-        height: 150px;
-        width: 150px;
-        border: 2px solid black;
+    .placeholder {
+        height: 100px;
+        width: 100px;
+        border: 2px solid  rgb(217, 217, 217);
         padding: 1em;
         border-radius: 20px;
-    }
-
-    /* testimonial landing page */
-
-    .hero-header-section {
-        padding: 0em 4em;
-    }
-
-    .hero-header-section {
-
-        padding: 2em 2em;
-    }
-
-    .hero-main-container {
-        height: 90vh;
-    }
-
-    .vertical-nav {
-        display: flex;
-        flex: 1;
-        line-height: 2em;
-        align-items: flex-start;
-        padding-left: 4.5em;
-
-    }
-
-    .vertical-nav li {
-        font-family: 'Poppins Regular';
-        color: rgb(255, 255, 255);
-        font-size: 2.1em;
-        padding-top: 0.4em;
-
-    }
-
-    .vertical-nav li:hover {
-        cursor: pointer;
-        color: #7AC143;
-    }
-
-    .algonquin-logo-container {
-        width: 30em;
-        margin-left: 2em;
-    }
-
-    .hamburger-menu {
-        display: none;
-    }
-
-    .hero-text {
-        font-size: 4em;
-        line-height: 1em;
-        padding-left: 1em;
-        width: 45%;
-        margin-top: 1em !important;
-    }
-
-    .imm-logo {
-        width:20em !important;
-        height: auto;
-        display: block;
-        margin-right: 3em;
-      
-    }
-
-    .primary-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-       padding: 0em 4em 0em 4em;
-    }
-
-    .header-logo-container {
-        height: 64px;
-        width: 67px;
-        margin-right: calc(67px + 15vw);
-        margin-top: 1em;
     }
 
     .primary-nav {
@@ -511,7 +268,13 @@ footer {
         align-items: center;
         justify-content: space-between;
         font-size: 20px;
+        font-family: 'Poppins SemiBold';
         font-weight: 600;
+    }
+
+    .primary-nav-items a {
+        text-decoration: none;
+        color:#00703C;
     }
 
     .primary-nav-items li:hover {
@@ -519,36 +282,16 @@ footer {
         cursor: pointer;
         text-decoration: underline;
     }
+
     /* should be different according to the container above, set it manually */
     footer {
+        background-color: transparent;
         height: 29vh;
-    }
-
-    .footerImg {
-        position: absolute;
-    }
-
-    .footerContents {
-        z-index: 1;
-        padding-right: 4em;
-    }
-
-    .footerContents ul {
-        /* background-color: yellowgreen; */
-        margin-left: 5em;
-    }
-
-    .footerContents li {
-        font-weight: lighter;
-        font-size: 1.5em;
-        line-height: 1.7em;
-        font-weight: lighter;
-    }
-    .footerApplyNow{
-        border: 1px solid white;
-        border-radius: 10px;
-        padding: .3em;
-        text-align: center;
+        position: relative;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 0 2em 1em;
     }
 
     .testimonial-container {
@@ -576,9 +319,9 @@ footer {
     .highlights-box p {
         font-size: 25px;
     }
+
     .study-illustrations {
         justify-content: flex-start;
-        gap: 4em;
+        gap: 2em;
     }
-    
 }

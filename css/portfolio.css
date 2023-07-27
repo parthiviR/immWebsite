@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+
+:root
+{
+    --green : #00703C;
+    --neon: #7AC143;
+    --border: #EEEEEE;
+}
+
+p{
+    line-height: 1.5em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 2%;
+ 
+}
+
+.subpage
+{
+    text-decoration: underline;
+    color: #00703C;
+    font-size: 1rem;
+    font-family: 'Poppins SemiBold';
+}
+
+.herohead
+{
+    font-size: 3rem;
+    font-family: 'Poppins SemiBold';
+    color: #00703C;
+    text-align: center;
+}
+.herosubhead
+{
+    font-size: 1em;
+    font-family: 'Poppins SemiBold';
+    color: #00703C;
+    margin: 1em 0;
+   
+}
+.portfolio-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 100%;
+}
+.web-design {
+    grid-template-columns: 100%;
+   
+}
+.portfolio-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.visuals  
+/* desktop version hidden */
+{
+    display: none;
+}
+
+.visuals-mobile {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.portfolio-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.photography {
+    grid-template-columns: 100%;
+    margin-top: 2rem;
+}
+.portfolio-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.category{
+font-family: 'Poppins SemiBold';
+font-size: 2em;
+margin: 1em 0em;
+}
+
+@media only screen and (min-width: 60em) {
+
+    
+/* Hero Section */
+section.hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+/* Web Design Section */
+.web-design {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.portfolio-imgs {
+    
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    
+}
+
+.portfolio-images {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
+    
+}
+.herohead{
+    text-align: left;
+}
+
+/* Visuals */
+
+.visuals{
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolio-imgs {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.portfolio-images {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
+}
+
+.visuals-mobile {
+    display: none;
+}
+
+/* photography */
+.photography{
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.portfolio-imgs {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.portfolio-images {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
+}
+
+
+}

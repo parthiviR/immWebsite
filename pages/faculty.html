@@ -1,65 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/faculty.css">
-    <title>Faculty</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./../css/reset.css">
+	<link rel="stylesheet" href="./../index.css">
+	<link rel="stylesheet" href="./../css/faculty.css">
+	<link rel="stylesheet" href="./../css/footer.css">
+	<link rel="stylesheet" href="./../css/header.css">
+	<script src="https://kit.fontawesome.com/acbac8cde3.js" crossorigin="anonymous"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<title>Faculty</title>
 </head>
+
 <body>
+		<div style="display: flex; justify-content: flex-end; padding: 0.5em 0.5em 0 0;" class="hamburger-menu">
+			<div class="hamburger hamburger-icon" id="hamburger-icon">
+				<i class="fa-solid fa-bars" style="color: black;"></i>
+			</div>
+		</div>
+        <header id="primary-header" class="primary-header">
+            <div class="header-logo-container">
+                <img class="image-in-box" src="./../images/ACBranding.svg">
+            </div>
+            <nav class="primary-nav">
+                <ul class="primary-nav-items">
+                    <li><a href="./../index.html">Home</a></li>
+                    <li><a href="./../pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./../pages/testimonial.html">Testimonials</a></li>
+                    <li><a href="./../pages/faculty.html">Faculty</a></li>
+					<li><a class="applyNow" href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply Now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hamburger-menu-items-mobile" id="hamburger-menu-items-mobile">
+            <div class="hamburger hamburger-cancel" id="hamburger-cancel">
+                <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            </div>
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./../pages/portfolio.html">Portfolio</a></li>
+                <li><a href="./../pages/testimonial.html">Testimonials</a></li>
+                <li><a href="./../pages/faculty.html">Faculty</a></li>
+                <li><a href="#">Apply now</a></li>
+            </ul>
+        </div>
+	<main>
+		<div class="faculty-page-container">
+			<section class="faculty-head-content">
+				<h2>MEET YOUR PROFESSORS</h2>
+				<p>We know that great teachers make all the difference in a program. Here is a look at the program
+					faculty.</p>
+			</section>
+			<section class="team">
+				<div class="thick-line"></div>
+				<div class="team-member">
+					<img class="image-in-box" src="./../images/man.jpg" alt="Team Member 1">
+					<h3>Darin Faber</h3>
+					<p>
+						Darin Faber has been teaching for over 25 years, including 18 years at Algonquin College, and is
+						a graduate of
+						the Interactive Media Management post-graduate studies program.
+					</p>
+				</div>
+				<div class="team-member">
+					<img class="image-in-box" src="./../images/faculty-image-1.jpg" alt="Team Member 2">
+					<h3>Anna Labelle</h3>
+					<p>Anna Labelle is a multifaceted creative professional with a background in education, as well as
+						graphic and
+						web design, videography and other media-related disciplines.</p>
+				</div>
+				<div class="team-member">
+					<img class="image-in-box" src="./../images/faculty-image-2.jpg" alt="Team Member 3">
+					<h3>Samar Elamir</h3>
+					<p>Samar ElAmir holds a bachelor of Arts in English literature from the University of Alexandria,
+						Egypt, and a
+						Master of Science in Information Technology from the University of Nottingham, UK.</p>
+				</div>
+				<div class="team-member">
+					<img class="image-in-box" src="./../images/faculty-image-3.jpg" alt="Team Member 3">
+					<h3>Amel Dedic</h3>
+					<p>Amel is a freelance web developer, web designer, and a professor at Algonquin College. He has
+						been teaching
+						web scripting at Algonquin since Winter 2014. Amel is a graduate of the IMM program.</p>
+				</div>
+				<div class="thick-line"></div>
+				<div class="team-member">
+					<img class="image-in-box" src="./../images/faculty-image-4.jpg" alt="Team Member 3">
+					<h3>Craig Clark</h3>
+					<p>Craig Clark is a multimedia specialist, digital strategist and artist, and is an alumni of the
+						Interactive
+						Media Management program.</p>
+				</div>
+				<div class="team-member">
+					<img class="image-in-box" src="./../images/man.jpg" alt="Team Member 3">
+					<h3>Samar Elamir</h3>
+					<p>Samar ElAmir holds a bachelor of Arts in English literature from the University of Alexandria,
+						Egypt, and a
+						Master of Science in Information Technology from the University of Nottingham, UK.</p>
+				</div>
+			</section>
 
+		</div>
+	</main>
 
-      <section class="faculty-head-content">
+	<footer>
+		<img class="footerImg image-in-box" src="./../images/footer.svg">
+		<div class="footerContents">
+			<div class="footer-grid-container">
+				<div class="footer-content-grids">
+					<a href="./../index.html">Home</a>
+					<a href="./../pages/portfolio.html">Portfolio</a>
+				</div>
+				<div class="footer-content-grids">
+					<a href="./../pages/faculty.html">Faculty</a>
+					<a href="./../pages/testimonial.html">Testimonials</a>
+				</div>
+				<div class="apply-now-grid">
+					<button
+						onclick="location.href='https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F';"
+						class="footerApplyNow">Apply Now</button>
+				</div>
+			</div>
+			<div class="social-media-icons">
+				<a href="#"><i class="fa-brands fa-pinterest" style="color: white;"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+				<a href="#"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+			</div>
+		</div>
+		<div class="footer-logo">
+			<img style="height: inherit; width: inherit;" src="./../images/footerBranding.svg">
+		</div>
+	</footer>
+	<script src="./../js/index.js"></script>
+</body>
 
-        <h2>MEET YOUR PROFESSORS</h2>
-        <p>We know that great teachers make all the difference in a program. <br> Here is a look at the program faculty.</p>
-
-      </section>  
-        
-      <div class="faculty-page-container">
-        <section class="team">
-            <div class="thick-line"></div>
-          <div class="team-member">
-            <img src="imgs/man.jpg" alt="Team Member 1">
-            <h3>Darin Faber</h3>
-            <p>
-              Darin Faber has been teaching for over 25 years, including 18 years at Algonquin College, and is a graduate of the Interactive Media Management post-graduate studies program.
-            </p>         
-           </div>
-           <section class="faculty-members"></section>
-          <div class="team-member">
-            <img src="imgs/man.jpg" alt="Team Member 2">
-            <h3>Anna Labelle</h3>
-            <p>Anna Labelle is a multifaceted creative professional with a background in education, as well as graphic and web design, videography and other media-related disciplines.</p>
-          </div>
-          <div class="team-member">
-            <img src="imgs/man.jpg" alt="Team Member 3">
-            <h3>Samar Elamir</h3>
-            <p>Samar ElAmir holds a bachelor of Arts in English literature from the University of Alexandria, Egypt, and a Master of Science in Information Technology from the University of Nottingham, UK.</p>
-          </div>
-         
-        </section>
-        <section class="team2">
-          <div class="thick-line"></div>
-          <div class="team-member">
-            <img src="imgs/man.jpg" alt="Team Member 3">
-            <h3>Amel Dedic</h3>
-            <p>Amel is a freelance web developer, web designer, and a professor at Algonquin College. He has been teaching web scripting at Algonquin since Winter 2014. Amel is a graduate of the IMM program.</p>
-          </div>
-          <div class="team-member">
-            <img src="imgs/man.jpg" alt="Team Member 3">
-            <h3>Craig Clark</h3>
-            <p>Craig Clark is a multimedia specialist, digital strategist and artist, and is an alumni of the Interactive Media Management program.</p>
-          </div>
-          <div class="team-member">
-            <img src="imgs/man.jpg" alt="Team Member 3">
-            <h3>Samar Elamir</h3>
-            <p>Samar ElAmir holds a bachelor of Arts in English literature from the University of Alexandria, Egypt, and a Master of Science in Information Technology from the University of Nottingham, UK.</p>
-          </div>
-  
-</section>
-
-      </div>
-  </body>
 </html>
