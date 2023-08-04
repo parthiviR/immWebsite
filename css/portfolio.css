@@ -104,11 +104,12 @@ main img{
 font-family: 'Poppins SemiBold';
 font-size: 2em;
 margin: 1em 0em;
+color: #00703C;
 }
 
 @media only screen and (min-width: 60em) {
 
-    
+
 /* Hero Section */
 section.hero {
     display: grid;
@@ -127,7 +128,9 @@ section.hero {
     align-items: center;
     gap: 3rem;
 }
-
+.web-design-content{
+    width: 75%;
+}
 .portfolio-imgs {
     
     display: grid;
@@ -170,6 +173,9 @@ section.hero {
 .visuals-mobile {
     display: none;
 }
+.visuals-content{
+    width: 70%;
+}
 
 /* photography */
 .photography{
@@ -191,5 +197,7 @@ section.hero {
     gap: 1rem;
 }
 
-
+.photography-content{
+    width:75%
+}
 }
