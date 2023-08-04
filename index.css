@@ -219,9 +219,8 @@ footer {
 .study-illustrations {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-items: center;
-    gap: 2em;
+    gap: 4em;
+    margin-top: 2em;
     margin-bottom: 2em;
     justify-content: center;
 }
@@ -323,7 +322,7 @@ footer {
     }
 
     .study-illustrations {
-        justify-content: center;
-        gap: 2em;
+        gap: 4em;
+        justify-content: flex-start;
     }
 }
